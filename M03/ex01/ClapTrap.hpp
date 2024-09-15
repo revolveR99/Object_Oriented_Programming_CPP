@@ -7,8 +7,8 @@
 // Definition of the ClapTrap class
 class ClapTrap
 {
-	private:
-		// Private member variables
+	protected:
+		// Protected member variables
 		std::string _Name;         // Name of the ClapTrap
 		int _Hitpoints;            // Amount of hitpoints (health)
 		int _EnergyPoints;         // Amount of energy points (used for actions)
@@ -35,7 +35,7 @@ class ClapTrap
 		ClapTrap &operator=(ClapTrap const &clapTrap2);
 
 		// Member functions
-		void attack(std::string const &target);   // Function for attacking a target
+		virtual void attack(std::string const &target);   // Function for attacking a target
 		void takeDamage(unsigned int amount);     // Function for taking damage
 		void beRepaired(unsigned int amount);     // Function for repairing and recovering health
 };
