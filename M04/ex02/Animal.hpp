@@ -25,7 +25,7 @@ class Animal {
 		std::string getType(void) const;
 		
 		// Pure virtual function for making a sound, to be implemented by derived classes
-		virtual void makeSound(void) const;
+		virtual void	makeSound(void) const = 0;
 
 	protected:
 		// Protected member variable to hold the animal type, accessible to derived classes
